@@ -1,0 +1,11 @@
+import time
+def Test():
+  print("loop")
+  time.sleep(1)
+def Infinite():
+  while True:
+    yield
+Test()
+time.sleep(0.5)
+for __ in Infinite():
+  print("test")
